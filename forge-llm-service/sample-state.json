@@ -1,0 +1,127 @@
+{
+  "context": "chooseAbility",
+  "player": {
+    "name": "LLM-Player",
+    "life": 20,
+    "manaPool": {
+      "white": 0,
+      "blue": 0,
+      "black": 0,
+      "red": 0,
+      "green": 0,
+      "colorless": 0
+    }
+  },
+  "gamePhase": {
+    "currentPhase": "MAIN1",
+    "currentTurn": 3,
+    "isPlayerTurn": true
+  },
+  "battlefield": [
+    {
+      "id": "123",
+      "name": "Sol Ring",
+      "type": "Artifact",
+      "power": 0,
+      "toughness": 0,
+      "text": "{T}: Add {C}{C}.",
+      "isTapped": false,
+      "canAttack": false,
+      "canBlock": false
+    },
+    {
+      "id": "124",
+      "name": "Llanowar Elves",
+      "type": "Creature - Elf Druid",
+      "power": 1,
+      "toughness": 1,
+      "text": "{T}: Add {G}.",
+      "isTapped": false,
+      "canAttack": true,
+      "canBlock": true
+    }
+  ],
+  "hand": [
+    {
+      "id": "125",
+      "name": "Lightning Bolt",
+      "type": "Instant",
+      "power": 0,
+      "toughness": 0,
+      "text": "Lightning Bolt deals 3 damage to any target.",
+      "isTapped": false,
+      "canAttack": false,
+      "canBlock": false
+    },
+    {
+      "id": "126",
+      "name": "Forest",
+      "type": "Basic Land - Forest",
+      "power": 0,
+      "toughness": 0,
+      "text": "{T}: Add {G}.",
+      "isTapped": false,
+      "canAttack": false,
+      "canBlock": false
+    }
+  ],
+  "commanders": [
+    {
+      "id": "127",
+      "name": "Goreclaw, Terror of Qal Sisma",
+      "type": "Legendary Creature - Bear",
+      "power": 4,
+      "toughness": 3,
+      "text": "Creature spells you cast with power 4 or greater cost {2} less to cast.\nWhenever Goreclaw, Terror of Qal Sisma attacks, each creature you control with power 4 or greater gets +1/+1 and gains trample until end of turn.",
+      "isTapped": false,
+      "canAttack": false,
+      "canBlock": false
+    }
+  ],
+  "opponents": [
+    {
+      "name": "AI-Opponent",
+      "life": 18,
+      "battlefield": [
+        {
+          "id": "128",
+          "name": "Grizzly Bears",
+          "type": "Creature - Bear",
+          "power": 2,
+          "toughness": 2,
+          "text": "",
+          "isTapped": false,
+          "canAttack": true,
+          "canBlock": true
+        }
+      ],
+      "commanders": [
+        {
+          "id": "129",
+          "name": "Omnath, Locus of Mana",
+          "type": "Legendary Creature - Elemental",
+          "power": 1,
+          "toughness": 1,
+          "text": "You don't lose unspent green mana as steps and phases end.\nOmnath, Locus of Mana gets +1/+1 for each green mana in your mana pool.",
+          "isTapped": false,
+          "canAttack": false,
+          "canBlock": false
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ability-1",
+      "hostCard": "Sol Ring",
+      "description": "Add {C}{C}",
+      "toString": "{T}: Add {C}{C}"
+    },
+    {
+      "id": "ability-2",
+      "hostCard": "Llanowar Elves",
+      "description": "Add {G}",
+      "toString": "{T}: Add {G}"
+    }
+  ]
+}
