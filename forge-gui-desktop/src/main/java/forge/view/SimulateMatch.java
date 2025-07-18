@@ -250,7 +250,7 @@ public class SimulateMatch {
                 mc.startGame(g1);
                 sw.stop();
                 System.out.println("DEBUG: Game execution completed for " + gameId);
-            }, 300, TimeUnit.SECONDS);
+            }, 1200, TimeUnit.SECONDS);
         } catch (TimeoutException e) {
             System.out.println("DEBUG: Game " + gameId + " timed out, stopping as draw");
             System.out.println("Stopping slow match as draw");
