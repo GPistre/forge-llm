@@ -197,8 +197,8 @@ def run_benchmark(deck1, deck2, num_sims, forge_path, output_dir=None, max_worke
     
     # Define the configurations to test
     configs = [
-        {"name": "Deck1(AI) vs Deck2(LLM)", "controllers": ["ai", "llm"], "format": game_format, "log_file": os.path.join(output_dir, "deck1_ai_vs_deck2_llm.log") if output_dir else None},
-        {"name": "Deck1(LLM) vs Deck2(AI)", "controllers": ["llm", "ai"], "format": game_format, "log_file": os.path.join(output_dir, "deck1_llm_vs_deck2_ai.log") if output_dir else None},
+        {"name": "Deck1(AI) vs Deck2(AI)", "controllers": ["ai", "ai"], "format": game_format, "log_file": os.path.join(output_dir, "deck1_ai_vs_deck2_ai.log") if output_dir else None},
+        {"name": "Deck2(AI) vs Deck1(AI)", "controllers": ["ai", "ai"], "format": game_format, "log_file": os.path.join(output_dir, "deck2_ai_vs_deck1_ai.log") if output_dir else None},
     ]
     
     all_results = {}

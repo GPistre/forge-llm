@@ -114,7 +114,7 @@ def debug_parallel_test(deck1, deck2, num_games=3, max_workers=2):
     for i in range(num_games):
         short_uuid = str(uuid.uuid4())[:8]
         unique_id = f"g{i+1}_{short_uuid}"
-        controllers = ["ai", "llm"] if i % 2 == 0 else ["llm", "ai"]
+        controllers = ["ai", "ai"]
         tasks.append((deck1, deck2, controllers, unique_id, forge_path))
         print(f"Task {i+1}: {unique_id} with {controllers}")
     
